@@ -217,3 +217,20 @@ body.menu-open::after {
   .footer-email { margin-top: 10px; }
   .footer-place { margin-top: 9px; }
 }
+
+/* Phone spacing, following the original Wix mobile layout */
+@media (max-width: 600px) {
+  .home-hero { padding: 40px var(--gutter) 20px; }
+  .home-what { padding: 20px 0 50px; }
+  .home-what p { margin-top: 20px; }
+  .home-towwave { padding: 0 0 50px; }
+  .home-towwave p { margin-top: 16px; }
+  .home-cap { padding: 10px 0 40px; }
+  .home-band { padding: 20px var(--gutter) 30px; }
+  .about-title { margin-top: 16px; }
+  .about h2 { margin-top: 36px; }
+  .contact-intro { padding: 40px 0 32px; }
+  .contact-intro p { margin-top: 16px; }
+  .contact-panel { padding-top: 40px; }
+  .contact-panel h2 { margin-bottom: 24px; }
+}
