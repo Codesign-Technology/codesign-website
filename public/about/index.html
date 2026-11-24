@@ -28,58 +28,47 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/" aria-label="Codesign Technology home">
-        <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="180" height="53">
-      </a>
-      <nav class="nav" aria-label="Main">
-        <ul>
+    <a class="brand" href="/" aria-label="Codesign Technology home">
+      <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="180" height="53">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MENU</button>
+    <nav class="menu" id="site-menu" aria-label="Main" hidden>
+      <button class="menu-close" type="button" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </button>
+      <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about/" aria-current="page">About</a></li>
           <li><a href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+          <li><a href="/about/" aria-current="page">About</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap">
-        <span class="eyebrow">About</span>
-        <h1>About Codesign Technology</h1>
-        <p class="lead">Simple. Useful. Engineered.</p>
-      </div>
-    </section>
+    <section class="about">
+      <div class="container">
+        <h1 class="about-title">About Codesign Technology</h1>
+        <p class="about-tag">Simple. Useful. Engineered</p>
 
-    <section class="section">
-      <div class="wrap prose">
-        <h2>The Codesign approach</h2>
+        <h2>The Codesign Approach</h2>
         <p>Codesign builds products from first principles. We focus on clarity, manufacturability, and the details that make a product feel intentional. Every decision is grounded in engineering discipline and real&#8209;world constraints.</p>
         <p>We remove complexity, refine the essentials, and design systems that are practical, reliable, and easy to understand. The goal is always the same: make things that work, make sense, and stand up to use.</p>
 
-        <h2>Founder and background</h2>
-        <p>Codesign is led by a founder&#8209;engineer and businessman with hands&#8209;on experience in international markets and across hardware, firmware, compliance, and enclosure design. The work is technical, detail&#8209;driven, and grounded in the realities of manufacturing and product integration.</p>
+        <h2>Founder / Background</h2>
+        <p>Codesign is led by a founder&#8209;engineer-businessman with hands&#8209;on experience in international markets and across hardware, firmware, compliance, and enclosure design. The work is technical, detail&#8209;driven, and grounded in the realities of manufacturing and product integration.</p>
         <p>From early prototypes to production&#8209;ready systems, the focus is on building products that are simple, robust, and engineered with intention.</p>
 
-        <h2>Global vision</h2>
+        <h2>Global Vision</h2>
         <p>Codesign is engineered in Australia and built for the world. TowWave is the first platform in a long&#8209;term, disciplined product roadmap designed for global standards and real&#8209;world use.</p>
         <p>As the company grows, the focus remains the same: clarity, usefulness, and engineering that respects the details.</p>
-      </div>
-    </section>
-
-    <section class="band">
-      <div class="wrap">
-        <p>Simple. Useful. <span>Engineered.</span></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p><a href="mailto:hello@codesign.technology">hello@codesign.technology</a></p>
-      <p>Based in Australia. Working globally.</p>
-      <p>&copy; <span data-year>2026</span> Codesign Technology</p>
-    </div>
+    <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="140" height="41" loading="lazy">
+    <p class="footer-email"><a href="mailto:hello@codesign.technology">hello@codesign.technology</a></p>
+    <p class="footer-place">Based in Australia. Working globally.</p>
   </footer>
 </body>
 </html>

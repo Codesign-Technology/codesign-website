@@ -1,9 +1,30 @@
 (function () {
   "use strict";
 
-  // Footer year
-  var year = String(new Date().getFullYear());
-  document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = year; });
+  // Slide-in menu
+  var toggle = document.querySelector(".menu-toggle");
+  var menu = document.getElementById("site-menu");
+  if (toggle && menu) {
+    var closeBtn = menu.querySelector(".menu-close");
+    var open = function () {
+      menu.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.classList.add("menu-open");
+      (menu.querySelector("a") || closeBtn).focus();
+    };
+    var close = function () {
+      menu.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+      toggle.focus();
+    };
+    toggle.addEventListener("click", open);
+    closeBtn.addEventListener("click", close);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !menu.hidden) close(); });
+    document.addEventListener("click", function (e) {
+      if (!menu.hidden && !menu.contains(e.target) && e.target !== toggle) close();
+    });
+  }
 
   // Contact form: submit to Web3Forms without leaving the page.
   // Without JavaScript the form still posts normally and Web3Forms shows its own confirmation page.
@@ -15,7 +36,7 @@
 
   function show(msg, kind) {
     status.textContent = msg;
-    status.className = "form-status full" + (kind ? " " + kind : "");
+    status.className = "form-status" + (kind ? " " + kind : "");
   }
 
   form.addEventListener("submit", function (e) {

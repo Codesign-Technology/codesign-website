@@ -28,37 +28,34 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/" aria-label="Codesign Technology home">
-        <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="180" height="53">
-      </a>
-      <nav class="nav" aria-label="Main">
-        <ul>
+    <a class="brand" href="/" aria-label="Codesign Technology home">
+      <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="180" height="53">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MENU</button>
+    <nav class="menu" id="site-menu" aria-label="Main" hidden>
+      <button class="menu-close" type="button" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </button>
+      <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
           <li><a href="/contact/" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+          <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap">
-        <span class="eyebrow">Contact</span>
-        <h1>Let&rsquo;s chat</h1>
-        <p class="lead">For general enquiries, partnerships, or dealer information, get in touch below.</p>
+    <section class="contact-intro">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>For general inquiries, partnerships, or dealer information, get in touch below.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap contact-grid">
-        <div class="contact-aside">
-          <h2>Contact us</h2>
-          <p>Send a message with the form, or email us directly at <a href="mailto:hello@codesign.technology">hello@codesign.technology</a>.</p>
-          <p>Based in Australia. Working globally.</p>
-        </div>
-
+    <section class="contact-panel">
+      <h2>Let&rsquo;s Chat</h2>
+      <div class="contact-card">
+        <h3>Contact us</h3>
         <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
           <!-- Web3Forms access key: public by design, it only identifies where to deliver. Replace before go-live. -->
           <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
@@ -70,7 +67,7 @@
           </div>
 
           <div class="field">
-            <label for="first_name">First name <span class="req" aria-hidden="true">*</span></label>
+            <label for="first_name">First name *</label>
             <input id="first_name" name="first_name" type="text" autocomplete="given-name" required maxlength="100">
           </div>
           <div class="field">
@@ -78,30 +75,27 @@
             <input id="last_name" name="last_name" type="text" autocomplete="family-name" maxlength="100">
           </div>
           <div class="field full">
-            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <label for="email">Email *</label>
             <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
           </div>
           <div class="field full">
-            <label for="message">Message</label>
+            <label for="message">Write a message</label>
             <textarea id="message" name="message" maxlength="5000"></textarea>
           </div>
-
-          <p class="privacy full">We use your details only to reply to your enquiry. Messages are delivered to us by email through our form provider, Web3Forms. We don&rsquo;t add you to a mailing list.</p>
-          <div class="full">
-            <button class="btn" type="submit">Send message</button>
+          <div class="full form-actions">
+            <button class="btn-submit" type="submit">Submit</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
-          <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
+          <p class="privacy full">We use your details only to reply to your enquiry. Messages reach us by email through our form provider, Web3Forms.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p><a href="mailto:hello@codesign.technology">hello@codesign.technology</a></p>
-      <p>Based in Australia. Working globally.</p>
-      <p>&copy; <span data-year>2026</span> Codesign Technology</p>
-    </div>
+    <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="140" height="41" loading="lazy">
+    <p class="footer-email"><a href="mailto:hello@codesign.technology">hello@codesign.technology</a></p>
+    <p class="footer-place">Based in Australia. Working globally.</p>
   </footer>
 </body>
 </html>
