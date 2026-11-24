@@ -32,7 +32,7 @@ The navigation, header and footer are repeated in each page, so a change to them
 The form posts to [Web3Forms](https://web3forms.com). The free plan allows 250 submissions a month.
 
 1. Create an access key at web3forms.com using **hello@codesign.technology**. Submissions are delivered to that address.
-2. Replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` in `public/contact/index.html` with the key. The key is public by design, because it only says where to deliver.
+2. The key is in `public/contact/index.html` (form name "Codesign website contact"). The key is public by design, because it only says where to deliver.
 
 Spam protection is a hidden honeypot field (`botcheck`) plus Web3Forms' own filtering. hCaptcha can be added later if spam becomes a problem; the CSP in `_headers` would then need the hCaptcha domains.
 
