@@ -11,7 +11,7 @@ The static website for **codesign.technology**. It is plain HTML and CSS with on
 | `public/404.html` | Not-found page (Cloudflare Pages serves it automatically) |
 | `public/assets/css/site.css` | All styles. The brand colours are CSS variables at the top. |
 | `public/assets/js/site.js` | Footer year and the contact form handler |
-| `public/assets/fonts/` | Outfit variable font, self-hosted (SIL OFL, see `OFL.txt`) |
+| `public/assets/fonts/` | Inter variable font for headings, self-hosted (SIL OFL, see `OFL-Inter.txt`). Body text uses the system Helvetica/Arial. |
 | `public/assets/img/` | Logos (copied from the brand kit) |
 | `public/favicon.*`, `apple-touch-icon.png`, `icon-*.png`, `site.webmanifest` | Icons, rendered from the brand kit `Favicon.svg` |
 | `public/og-image.png` | 1200×630 link-preview image |

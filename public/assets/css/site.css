@@ -1,10 +1,10 @@
 /* Codesign Technology — site styles.
    Layout, sizes and spacing follow the original Wix site (measured 24 Nov 2026 at 1280px).
-   Colours: brand guide v1.0. Font: Outfit (brand guide). Background: black (Mike, 24 Nov 2026). */
+   Colours: brand guide v1.0. Fonts as on the original site: Helvetica for text, Inter for headings (Mike, 24 Nov 2026). Background: black (Mike, 24 Nov 2026). */
 
 @font-face {
-  font-family: "Outfit";
-  src: url("/assets/fonts/outfit-latin.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("/assets/fonts/inter-latin.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,9 @@
   --muted: #777777;
   --container: 920px;
   --gutter: 20px;
-  --font: "Outfit", "Century Gothic", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Helvetica is a licensed font, so it isn't embedded: Macs and iPhones show Helvetica, Windows and Android show Arial (near-identical metrics). */
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-head: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -41,6 +43,7 @@ main { flex: 1; }
 
 img { max-width: 100%; height: auto; display: block; }
 
+h1, h2, h3, h4, .about-tag, .menu, .menu-toggle { font-family: var(--font-head); }
 h1, h2, h3, h4 { font-weight: 400; margin: 0; }
 p { margin: 0; }
 
