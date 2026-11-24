@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Codesign Technology</title>
+  <meta name="description" content="Get in touch with Codesign Technology for general enquiries, partnerships or TowWave dealer information.">
+  <link rel="canonical" href="https://www.codesign.technology/contact/">
+  <meta name="theme-color" content="#303841">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Codesign Technology">
+  <meta property="og:title" content="Contact | Codesign Technology">
+  <meta property="og:description" content="Get in touch with Codesign Technology for general enquiries, partnerships or TowWave dealer information.">
+  <meta property="og:url" content="https://www.codesign.technology/contact/">
+  <meta property="og:image" content="https://www.codesign.technology/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_AU">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Codesign Technology home">
+        <img src="/assets/img/codesign-logo-dark-bg.svg" alt="Codesign" width="180" height="53">
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h1>Let&rsquo;s chat</h1>
+        <p class="lead">For general enquiries, partnerships, or dealer information, get in touch below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-aside">
+          <h2>Contact us</h2>
+          <p>Send a message with the form, or email us directly at <a href="mailto:hello@codesign.technology">hello@codesign.technology</a>.</p>
+          <p>Based in Australia. Working globally.</p>
+        </div>
+
+        <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <!-- Web3Forms access key: public by design, it only identifies where to deliver. Replace before go-live. -->
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New enquiry from codesign.technology">
+          <input type="hidden" name="from_name" value="Codesign website">
+          <div class="hp" aria-hidden="true">
+            <label for="botcheck">Leave this empty</label>
+            <input type="checkbox" name="botcheck" id="botcheck" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label for="first_name">First name <span class="req" aria-hidden="true">*</span></label>
+            <input id="first_name" name="first_name" type="text" autocomplete="given-name" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="last_name">Last name</label>
+            <input id="last_name" name="last_name" type="text" autocomplete="family-name" maxlength="100">
+          </div>
+          <div class="field full">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" maxlength="5000"></textarea>
+          </div>
+
+          <p class="privacy full">We use your details only to reply to your enquiry. Messages are delivered to us by email through our form provider, Web3Forms. We don&rsquo;t add you to a mailing list.</p>
+          <div class="full">
+            <button class="btn" type="submit">Send message</button>
+          </div>
+          <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:hello@codesign.technology">hello@codesign.technology</a></p>
+      <p>Based in Australia. Working globally.</p>
+      <p>&copy; <span data-year>2026</span> Codesign Technology</p>
+    </div>
+  </footer>
+</body>
+</html>
