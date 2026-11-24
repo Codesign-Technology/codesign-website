@@ -237,3 +237,12 @@ body.menu-open::after {
   .contact-panel { padding-top: 40px; }
   .contact-panel h2 { margin-bottom: 24px; }
 }
+
+/* Contact: everything from "Let's Chat" down is centred (Mike, 24 Nov 2026) */
+.contact-panel { text-align: center; }
+.contact-card { margin: 0 auto; }
+.field label { text-align: center; }
+.field input, .field textarea { text-align: center; }
+.form-actions { flex-direction: column; justify-content: center; }
+.form-status:empty { display: none; }
+.contact-panel { margin-bottom: 40px; } /* original: 45px from panel to footer logo */
