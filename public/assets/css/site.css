@@ -238,11 +238,7 @@ body.menu-open::after {
   .contact-panel h2 { margin-bottom: 24px; }
 }
 
-/* Contact: everything from "Let's Chat" down is centred (Mike, 24 Nov 2026) */
-.contact-panel { text-align: center; }
-.contact-card { margin: 0 auto; }
-.field label { text-align: center; }
-.field input, .field textarea { text-align: center; }
-.form-actions { flex-direction: column; justify-content: center; }
+/* Contact: the form block ("Let's Chat" + card) is centred in the teal panel; text stays left-aligned (Mike, 24 Nov 2026) */
+.contact-panel > h2, .contact-card { max-width: 927px; margin-left: auto; margin-right: auto; }
 .form-status:empty { display: none; }
 .contact-panel { margin-bottom: 40px; } /* original: 45px from panel to footer logo */
