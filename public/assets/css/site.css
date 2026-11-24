@@ -242,3 +242,10 @@ body.menu-open::after {
 .contact-panel > h2, .contact-card { max-width: 927px; margin-left: auto; margin-right: auto; }
 .form-status:empty { display: none; }
 .contact-panel { margin-bottom: 40px; } /* original: 45px from panel to footer logo */
+
+/* Font per element, matched to the original Wix site (measured on Windows, 24 Nov 2026):
+   most text is Inter with -0.01em tracking; only the two long Home paragraphs and the form
+   use Helvetica, which Wix sets with +0.01em tracking. */
+body { font-family: var(--font-head); letter-spacing: -0.01em; }
+.home-what p, .home-towwave p, .contact-card .form { font-family: var(--font); letter-spacing: 0.01em; }
+.contact-card .form input, .contact-card .form textarea, .contact-card .form button { letter-spacing: inherit; }
